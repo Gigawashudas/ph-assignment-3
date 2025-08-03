@@ -50,3 +50,15 @@ var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
 var studentEmail = `${student.name}${student.roll}.${student.department}@ph.ac.bd`;
 
 console.log(studentEmail)
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 40;
+var startingSalary = 30000;
+var runningSalary = startingSalary;
+
+for (var i = 0; i < experience; i++) {
+    runningSalary = runningSalary + ((runningSalary / 100) * 5);
+}
+
+console.log(runningSalary.toFixed(2))
